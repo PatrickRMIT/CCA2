@@ -67,19 +67,30 @@ function func()
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>password page</title>
+<title>password change</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
     <body>
-        Logged in as <?php echo $user['name']; ?><br> 
-        <h1>Change password</h1>
+    <div class="header">
+  <h1>Change Name <?php echo $user['name'];?></h1>
+  <h2>EDIT YOUR PROFILE</h2>
+</div>
+<ul>
+  <li><a href="https://cca2patrickjoel.ts.r.appspot.com/main">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a class="active" href="https://cca2patrickjoel.ts.r.appspot.com/profile">Profile</a></li>
+</ul>
+
+<p>Logged in as <?php echo $user['name']; ?></p><br> 
         <p>please enter your old password, then your new password</p>
         <form action = "https://cca2patrickjoel.ts.r.appspot.com/password" method="post">
-            Old Password: <input type="password" name="oldpassword"><br>
-            New Password: <input type="password" name="newpassword"><br>
-            <div><input type="submit" name="change" value="CHANGE"></div>
+            <p>Old Password: <input type="password" name="oldpassword"></p><br>
+            <p>New Password: <input type="password" name="newpassword"></p><br>
+            <div><input type="submit" name="change" class="button" value="CHANGE"></div>
         </form>
-<a href="https://cca2patrickjoel.ts.r.appspot.com/main">Return to Main</a>
+        <button type="button" class="button"href="https://cca2patrickjoel.ts.r.appspot.com/main">Return to Main</button>
     </body>
 </html>

@@ -184,13 +184,15 @@ $user = $datastore->lookup($key);
 <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
     <body>
     <div class="header">
-  <h1>WECLOME TO SOCIAL DASHBOARD - Please log in below</h1>
-  <p>To DO. setup database, maybe do some CSS</p>
+  <h1>WECLOME TO SOCIAL DASHBOARD</h1>
+  <h2>Please log in below</h2>
 </div>
+<div class="login">
         <form action = "https://cca2patrickjoel.ts.r.appspot.com" method="post">
             UserID: <input type="text" name="username"><br>
             Password: <input type="password" name="password"><br>
             <div><input type="submit" name="login"value="Login"></div>
         </form>
+        </div>
     </body>
 </html> 

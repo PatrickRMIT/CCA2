@@ -61,18 +61,28 @@ function func()
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>name Page</title>
+<title>name change</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
     <body>
-        Logged in as <?php echo $user['name']; ?><br> 
-        <h1>Change Name</h1>
+    <div class="header">
+  <h1>Change Name <?php echo $user['name'];?></h1>
+  <h2>EDIT YOUR PROFILE</h2>
+</div>
+<ul>
+  <li><a href="https://cca2patrickjoel.ts.r.appspot.com/main">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a class="active" href="https://cca2patrickjoel.ts.r.appspot.com/profile">Profile</a></li>
+</ul>
+<p>Logged in as <?php echo $user['name']; ?></p><br> 
     <p>Change your name here:</p>
         <form action = "https://cca2patrickjoel.ts.r.appspot.com/name" method="post">
-            Name: <input type="text" name="newname"><br>
-            <div><input type="submit" name="change" value="CHANGE"></div>
+            <p>Name: <input type="text" name="newname"></p><br>
+            <div><input type="submit" name="change" class="button" value="CHANGE"></div>
         </form>
-        <a href="https://cca2patrickjoel.ts.r.appspot.com/main">Return to Main</a>
+        <button type="button" class="button" href="https://cca2patrickjoel.ts.r.appspot.com/main">Return to Main</button>
     </body>
 </html>

@@ -15,22 +15,32 @@ $user = $datastore->lookup($key);
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Main Page</title>
+<title>Profile page</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
     <body>
     <div class="header">
   <h1>WECLOME BACK <?php echo $user['name'];?></h1>
-  <h2>This is your social dashboard</h2>
+  <h2>EDIT YOUR PROFILE</h2>
 </div>
 <ul>
-  <li><a class="active" href="https://cca2patrickjoel.ts.r.appspot.com/main">Home</a></li>
+  <li><a href="https://cca2patrickjoel.ts.r.appspot.com/main">Home</a></li>
   <li><a href="#news">News</a></li>
   <li><a href="#contact">Contact</a></li>
   <li><a href="#about">About</a></li>
-  <li><a href="https://cca2patrickjoel.ts.r.appspot.com/profile">Profile</a></li>
+  <li><a class="active" href="https://cca2patrickjoel.ts.r.appspot.com/profile">Profile</a></li>
 </ul>
+<div class="main">
 <p>Logged in as <?php echo $user['name'];?></p><br> 
+<p>Change your display name: </p>
+        <form action="https://cca2patrickjoel.ts.r.appspot.com/name">
+    <input type="submit" class="button" value="Chane Name" />
+</form>
+<p>Change your passowrd: </p>
+<form action="https://cca2patrickjoel.ts.r.appspot.com/password">
+    <input type="submit" class="button" value="Chane Password" />
+</form>
+</div>
     </body>
 </html>
