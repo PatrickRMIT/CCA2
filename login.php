@@ -176,15 +176,17 @@ $user = $datastore->lookup($key);
 
 ?>
 <!DOCTYPE html>
-<html lang = "en-US">
- <head>
- <meta charset = "UTF-8">
-<link rel = "stylesheet"
-   type = "text/css"
-   href = "style.css" />
+<html lang="en">
+<head>
+<title>Login Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
     <body>
-        <p>WECLOME TO SOCIAL DASHBOARD - Please log in below</p>
-		<p>To DO. setup database, maybe do some CSS</p>
+    <div class="header">
+  <h1>WECLOME TO SOCIAL DASHBOARD - Please log in below</h1>
+  <p>To DO. setup database, maybe do some CSS</p>
+</div>
         <form action = "https://cca2patrickjoel.ts.r.appspot.com" method="post">
             UserID: <input type="text" name="username"><br>
             Password: <input type="password" name="password"><br>

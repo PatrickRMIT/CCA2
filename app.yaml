@@ -10,5 +10,7 @@ handlers:
   script: name.php
 - url: /password
   script: password.php
+- url: /stylesheets
+  static_dir: stylesheets
 
 

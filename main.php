@@ -12,7 +12,13 @@ $key = $datastore->key('user', $_SESSION['username']);
 $user = $datastore->lookup($key);
 
 ?>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Main Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
     <body>
         Logged in as <?php echo $user['name'];?><br> 
         <h1>Main content</h1>
