@@ -12,6 +12,8 @@ handlers:
   script: password.php
 - url: /profile
   script: profile.php
+- url: /maps
+  script: maps.php
 - url: /stylesheets
   static_dir: stylesheets
 
