@@ -14,6 +14,10 @@ handlers:
   script: profile.php
 - url: /maps
   script: maps.php
+- url: /files
+  script: files.php
+- url: /search
+  script: search.php  
 - url: /stylesheets
   static_dir: stylesheets
 

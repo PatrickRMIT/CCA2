@@ -79,7 +79,9 @@ function func()
 <ul>
   <li><a href="https://cca2patrickjoel.ts.r.appspot.com/main">Home</a></li>
   <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
+  <li><a href="https://cca2patrickjoel.ts.r.appspot.com/files">Files</a></li>
+  <li><a href="https://cca2patrickjoel.ts.r.appspot.com/search.php">Search Videos</a></li>
+  <li><a href="https://cca2patrickjoel.ts.r.appspot.com/maps">Maps</a></li>
   <li><a href="#about">About</a></li>
   <li><a class="active" href="https://cca2patrickjoel.ts.r.appspot.com/profile">Profile</a></li>
 </ul>
