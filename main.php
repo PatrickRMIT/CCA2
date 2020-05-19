@@ -27,10 +27,16 @@ $user = $datastore->lookup($key);
 <ul>
   <li><a href="https://cca2patrickjoel.ts.r.appspot.com/main">Home</a></li>
   <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
+  <li><a href="https://cca2patrickjoel.ts.r.appspot.com/files">Files</a></li>
+  <li><a href="https://cca2patrickjoel.ts.r.appspot.com/search">Search Videos</a></li>
   <li><a href="https://cca2patrickjoel.ts.r.appspot.com/maps">Maps</a></li>
   <li><a href="https://cca2patrickjoel.ts.r.appspot.com/profile">Profile</a></li>
 </ul>
 <p>Logged in as <?php echo $user['name'];?></p><br> 
+<div class="mainhome">
+<h3>Welcome to social dashboard!</h3>
+
+<h4>todays top trends are</h3>
+div>
     </body>
 </html>
