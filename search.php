@@ -33,20 +33,19 @@ $user = $datastore->lookup($key);
   <li><a href="https://cca2patrickjoel.ts.r.appspot.com/maps">Maps</a></li>
   <li><a href="https://cca2patrickjoel.ts.r.appspot.com/profile">Profile</a></li>
 </ul>
-    <p>YouTube Search</p>
-    <div id="search">
-      <input type="text"  value="eureka" id="searchtext"><button type="button" id="searchbutton">Find</button>
-      </div>
-        <button type="button">Search Me...</button>
-        
-        <pre id="response">
-        </pre>
-      <pre id="count"></pre>
-        <pre class="vID"></pre>
-        <div id="snipp">
-          <div id=T0>
-        </div>
-        <br/><br/><br/>
+    <h3>Here are the top trending videos in </h3>
+    <h3>Country selection <span id="current"></span></h3>
+
+<select id="animals">
+  <option value="AU">Australia</option>
+  <option value="US">United States</option>
+  <option value="IN">India</option>
+</select>
+
+      <mainvideo>
+      </mainvideo>
+	<main>
+	</main>
 <!-- scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
