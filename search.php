@@ -36,12 +36,11 @@ $user = $datastore->lookup($key);
     <h3>Here are the top trending videos in </h3>
     <h3>Country selection <span id="current"></span></h3>
 
-<select id="animals">
+<select id="animals" onchange = trends(this)>
   <option value="AU">Australia</option>
   <option value="US">United States</option>
   <option value="IN">India</option>
 </select>
-
       <mainvideo>
       </mainvideo>
 	<main>

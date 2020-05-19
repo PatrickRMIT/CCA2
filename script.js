@@ -96,33 +96,37 @@
 // https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg
 
 
+function GetSelectedTextValue(country) {
+  var selectedText = country.options[country.selectedIndex].innerHTML;
+  var selectedValue = country.value;
+  }
 
-$(document).ready(function () {
 
-  var key = 'AIzaSyB0nu7HabL4z8Pzb_S3LRnv0m8GHQaUU5Q';
+function trends(selectedValue) {
+
   var URL = 'https://www.googleapis.com/youtube/v3/videos';
 
-
-  var elem = document.getElementById('animals');
-  var currElem = document.getElementById('current');
+  // var elem = document.getElementById('animals');
+  // var currElem = document.getElementById('current');
   
-  currElem.innerHTML = elem.value;
+  // currElem.innerHTML = elem.value;
   
-  animals.onchange = function(e) {
-     currElem.innerHTML = e.target.value;
-  }
-  animals.onchange = loadVids();
-
+  // animals.onchange = function(e) {
+  //    currElem.innerHTML = e.target.value;
+  // }
+  // animals.onchange = loadVids();
+  //selectedValue = document.getElementById('animals');
 
   var options = {
     part: 'snippet',
     chart: 'mostPopular',
     kind: 'youtube#videoListResponse',
     maxResults: 10,
-    regionCode: 'AU',
+    regionCode: selectedValue.value,
     key: 'AIzaSyB0nu7HabL4z8Pzb_S3LRnv0m8GHQaUU5Q',
   }
 
+  
   loadVids();
 
   function loadVids() {
@@ -169,9 +173,7 @@ $(document).ready(function () {
       var id = $(this).attr('data-key');
       mainVid(id);
   });
-
-
-});
+};
 
 
 
