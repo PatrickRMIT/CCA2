@@ -33,6 +33,10 @@ $user = $datastore->lookup($key);
   <li><a href="https://cca2patrickjoel.ts.r.appspot.com/profile">Profile</a></li>
 </ul>
 <p>Logged in as <?php echo $user['name'];?></p><br> 
+<div class="mainhome">
+<h3>Welcome to social dashboard!</h3>
 
+<h4>todays top trends are</h3>
+div>
     </body>
 </html>

@@ -20,11 +20,18 @@ p {
 .header {
     padding: 60px;
     text-align: center;
-    background: #1abc9c;
+    background: #ffabab;
     font-size: 30px;
   }
 
   .main {
+    padding: 60px;
+    text-align: center;
+    background: white;
+    font-size: 30px;
+  }
+
+  .mainvideo {
     padding: 60px;
     text-align: center;
     background: white;
@@ -40,7 +47,8 @@ p {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #8adcff;
+    
   }
   
   li {
@@ -49,18 +57,18 @@ p {
   
   li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
   li a:hover:not(.active) {
-    background-color: #111;
+    background-color: #ff4d4a;
   }
   
   .active {
-    background-color: #4CAF50;
+    background-color: #ff4d4a;
   }
   .button {
     background-color: #4CAF50;
@@ -102,6 +110,7 @@ p {
     width: 560px;
     background-color: #fff;
     margin: 0 auto;
+    align-content: center;
   }
   
   header,
@@ -132,9 +141,8 @@ p {
     border: 2px solid white;
     border-radius: 8px;
     margin: 0 auto;
-      border: 2px solid #ff9999;
+      border: 2px solid #fc0703;
     }
-  
   
   .thumb {
     height: 70px;
@@ -145,3 +153,14 @@ p {
     padding: 8px 22px;
   }
   
+
+  /*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
