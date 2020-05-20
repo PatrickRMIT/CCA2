@@ -26,19 +26,19 @@ $user = $datastore->lookup($key);
 </div>
 <ul>
 <li><a href="https://cca2patrickjoel.ts.r.appspot.com/main">Home</a></li>
-  <li><a href="#news">News</a></li>
+<li><a href="https://cca2patrickjoel.ts.r.appspot.com/data">Growth Data</a></li>
   <li><a href="https://cca2patrickjoel.ts.r.appspot.com/files">Files</a></li>
   <li><a href="https://cca2patrickjoel.ts.r.appspot.com/search">Search Videos</a></li>
   <li><a href="https://cca2patrickjoel.ts.r.appspot.com/maps">Maps</a></li>
   <li><a class="active" href="https://cca2patrickjoel.ts.r.appspot.com/profile">Profile</a></li>
 </ul>
-<div class="main">
-<p>Logged in as <?php echo $user['name'];?></p><br> 
-<p>Change your display name: </p>
+<div class="mainvideo">
+<h4>Logged in as <?php echo $user['name'];?></h4><br> 
+<h4>Change your display name: </h4>
         <form action="https://cca2patrickjoel.ts.r.appspot.com/name">
     <input type="submit" class="button" value="Chane Name" />
 </form>
-<p>Change your passowrd: </p>
+<h4>Change your passowrd: </h4>
 <form action="https://cca2patrickjoel.ts.r.appspot.com/password">
     <input type="submit" class="button" value="Chane Password" />
 </form>

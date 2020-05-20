@@ -18,8 +18,12 @@ handlers:
   script: files.php
 - url: /search
   script: search.php
+- url: /data
+  script: data.php
 - url: /script
   script: script.js
+- url: /bigq
+  script: bigq.js
 - url: /stylesheets
   static_dir: stylesheets
 
