@@ -34,9 +34,19 @@ p {
   .mainvideo {
     padding: 60px;
     text-align: center;
+    align-content: center;
     background: white;
     font-size: 30px;
   }
+
+  .mainhome {
+    padding: 60px;
+    text-align: center;
+    align-content: center;
+    background: white;
+    font-size: 30px;
+  }
+
   .login {
     padding: 60px;
     text-align: center;
@@ -103,7 +113,7 @@ p {
   }
   
   body {
-    background-color: #eee;
+    background-color: white;
   }
   
   .container {
@@ -164,3 +174,7 @@ p {
   display: none; /*hide original SELECT element:*/
 }
 
+.map {
+  align-content: center;
+  display: inline-block
+}

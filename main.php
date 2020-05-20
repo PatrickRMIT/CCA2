@@ -26,7 +26,7 @@ $user = $datastore->lookup($key);
 </div>
 <ul>
   <li><a href="https://cca2patrickjoel.ts.r.appspot.com/main">Home</a></li>
-  <li><a href="#news">News</a></li>
+  <li><a href="https://cca2patrickjoel.ts.r.appspot.com/data">Growth Data</a></li>
   <li><a href="https://cca2patrickjoel.ts.r.appspot.com/files">Files</a></li>
   <li><a href="https://cca2patrickjoel.ts.r.appspot.com/search">Search Videos</a></li>
   <li><a href="https://cca2patrickjoel.ts.r.appspot.com/maps">Maps</a></li>
@@ -37,6 +37,6 @@ $user = $datastore->lookup($key);
 <h3>Welcome to social dashboard!</h3>
 
 <h4>todays top trends are</h3>
-div>
+</div>
     </body>
 </html>
