@@ -164,17 +164,20 @@ p {
   }
   
 
-  /*the container must be positioned relative:*/
 .custom-select {
   position: relative;
   font-family: Arial;
 }
 
 .custom-select select {
-  display: none; /*hide original SELECT element:*/
+  display: none; 
 }
 
 .map {
   align-content: center;
   display: inline-block
+}
+
+.wrapper {
+  text-align: center;
 }
