@@ -27,7 +27,7 @@ $user = $datastore->lookup($key);
 </div>
 <ul>
 <li><a href="https://cca2patrickjoel.ts.r.appspot.com/main">Home</a></li>
-  <li><a href="#news">News</a></li>
+<li><a href="https://cca2patrickjoel.ts.r.appspot.com/data">News</a></li>
   <li><a href="https://cca2patrickjoel.ts.r.appspot.com/files">Files</a></li>
   <li><a class="active" href="https://cca2patrickjoel.ts.r.appspot.com/search">Search Videos</a></li>
   <li><a href="https://cca2patrickjoel.ts.r.appspot.com/maps">Maps</a></li>

@@ -24,6 +24,10 @@ handlers:
   script: script.js
 - url: /bigq
   script: bigq.js
+- url: /email
+  script: email.js
+- url: /file
+  script: file.js
 - url: /stylesheets
   static_dir: stylesheets
 
