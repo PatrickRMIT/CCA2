@@ -4,7 +4,7 @@ body {
  color: black;
 }
 h1 {
- color: #FFFF33;
+ color: rgb(255, 255, 255);
  text-align: center;
  font: italic 200% fantasy;
 }
@@ -13,14 +13,11 @@ h2 {
   color: black;
   text-align: center;
  }
-p {
- color: black;
- text-align: left;
-}
+
 .header {
     padding: 60px;
     text-align: center;
-    background: #ffabab;
+    background: #c03b3b;
     font-size: 30px;
   }
 
@@ -57,7 +54,7 @@ p {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #8adcff;
+    background-color: #4ecaff;
     
   }
   
@@ -104,8 +101,13 @@ p {
   
   p {
     color: grey;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
+  }
+
+  p #vid{
+    color: grey;
+    font-size: 20px;
   }
   
   body {
@@ -176,6 +178,7 @@ p {
 
 .wrapper {
   text-align: center;
+  display: inline-block
 }
 
 .container1 {

@@ -189,7 +189,7 @@ $user = $datastore->lookup($key);
 </div>
 <div class="login">
         <form action = "https://cca2patrickjoel.ts.r.appspot.com" method="post">
-            UserID: <input type="text" name="username"><br>
+            email:  <input type="text" name="username"><br>
             Password: <input type="password" name="password"><br>
             <div><input type="submit" name="login"value="Login"></div>
         </form>

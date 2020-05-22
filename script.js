@@ -50,7 +50,7 @@ function trends(selectedValue) {
               <img src="${thumb}" alt="" class="thumb">
               <div class="details">
                 <h4 align="left">${title}</h4>
-                <p>${desc}</p>
+                <p id="vid">${desc}</p>
               </div>
             </article>
           `);

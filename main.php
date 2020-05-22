@@ -14,6 +14,7 @@ $user = $datastore->lookup($key);
 
 
 $options = ['size' => 100, 'crop' => false];
+$option2 = ['size' => 250, 'crop' => false];
 $image_file = "gs://socialdashboard/gcp.png";
 $image_file2 = "gs://socialdashboard/gae.png";
 $image_file3 = "gs://socialdashboard/gcd.png";
@@ -28,7 +29,7 @@ $image_file11 = "gs://socialdashboard/cps.png";
 $image_file12 = "gs://socialdashboard/bq.png";
 $image_file13 = "gs://socialdashboard/gc.png";
 
-$image_url = CloudStorageTools::getImageServingUrl($image_file, $options);
+$image_url = CloudStorageTools::getImageServingUrl($image_file, $option2);
 $image_url2 = CloudStorageTools::getImageServingUrl($image_file2, $options);
 $image_url3 = CloudStorageTools::getImageServingUrl($image_file3, $options);
 $image_url4 = CloudStorageTools::getImageServingUrl($image_file4, $options);

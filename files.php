@@ -38,8 +38,8 @@ $user = $datastore->lookup($key);
 <div>
     <H4>View Your Google drive files!</H4>
     <div class="wrapper">
-    <button id="authorize_button" style="display: none; position: absolute; top: 50%;">Authorize</button>
-    <button id="signout_button" style="display: none; position: absolute; top: 50%;">Sign Out</button>
+    <button id="authorize_button" style="display: none; position: relative; top: 50%; margin: 0 auto;">Authorize</button>
+    <button id="signout_button" style="display: none; position: relative; top: 50%;">Sign Out</button>
     </div>
     </div>
   <main class="mainvideo">
