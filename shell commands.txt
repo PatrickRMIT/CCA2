@@ -1,3 +1,0 @@
-gcloud app deploy app.yaml --project task2-cc2020pj
-
-gcloud app browse --project task2-cc2020pj

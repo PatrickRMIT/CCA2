@@ -15,7 +15,7 @@ $user = $datastore->lookup($key);
 <!DOCTYPE html>
 <html>
   <head>
-    <title>test</title>
+    <title>Files</title>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
@@ -37,7 +37,6 @@ $user = $datastore->lookup($key);
 <div class="mainvideo">
 <div>
     <H4>View Your Google drive files!</H4>
-    <button onclick="sendEmailWithAttachments()">Email Them!</button>
     <div class="wrapper">
     <button id="authorize_button" style="display: none; position: absolute; top: 50%;">Authorize</button>
     <button id="signout_button" style="display: none; position: absolute; top: 50%;">Sign Out</button>
@@ -45,14 +44,18 @@ $user = $datastore->lookup($key);
     </div>
   <main class="mainvideo">
     <pre id="content" style="white-space: pre-wrap;"></pre>
+<br>
+<button onclick="sendEmailWithAttachments()">Email Them!</button>
+    <pre id="content2" style="white-space: pre-wrap;"></pre>
     </main class="mainvideo">
+
 
 
     <script type="text/javascript">
       var CLIENT_ID = '187281538421-4tgmp51dbr9faab2mch3ckets5v8mq8n.apps.googleusercontent.com';
       var API_KEY = 'AIzaSyB0nu7HabL4z8Pzb_S3LRnv0m8GHQaUU5Q';
-      var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/drive/v3/rest"];
-      var SCOPES = 'https://www.googleapis.com/auth/drive.metadata.readonly';
+      var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/drive/v3/rest", "https://www.googleapis.com/discovery/v1/apis/gmail/v1/rest"];
+      var SCOPES = 'https://www.googleapis.com/auth/drive.metadata.readonly https://www.googleapis.com/auth/gmail.readonly';
 
       var authorizeButton = document.getElementById('authorize_button');
       var signoutButton = document.getElementById('signout_button');
@@ -86,6 +89,7 @@ $user = $datastore->lookup($key);
           authorizeButton.style.display = 'none';
           signoutButton.style.display = 'block';
           listFiles();
+          listLabels();
         } else {
           authorizeButton.style.display = 'block';
           signoutButton.style.display = 'none';
@@ -103,6 +107,12 @@ $user = $datastore->lookup($key);
 
       function appendPre(message) {
         var pre = document.getElementById('content');
+        var textContent = document.createTextNode(message + '\n');
+        pre.appendChild(textContent);
+      }
+
+      function appendPre2(message) {
+        var pre = document.getElementById('content2');
         var textContent = document.createTextNode(message + '\n');
         pre.appendChild(textContent);
       }
@@ -128,11 +138,37 @@ $user = $datastore->lookup($key);
         });
       }
 
+// GMAIL
+
+
+      function listLabels() {
+        gapi.client.gmail.users.labels.list({
+          'userId': 'me'
+        }).then(function(response) {
+          var labels = response.result.labels;
+          appendPre2('Gmail Labels from your inbox');
+
+          if (labels && labels.length > 0) {
+            for (i = 0; i < labels.length; i++) {
+              var label = labels[i];
+              appendPre2(label.name)
+            }
+          } else {
+            appendPre2('No Labels found.');
+          }
+        });
+      }
+
     </script>
     <script async defer src="https://apis.google.com/js/api.js"
       onload="this.onload=function(){};handleClientLoad()"
       onreadystatechange="if (this.readyState === 'complete') this.onload()">
     </script>
     <script src="email" type="text/javascript"></script>
+
+    <div class="footer">
+  <p>Developed By Patrick Jones S3661943 & Joel Jacob 3660851 for Cloud Computing COSC2626/2640 Assignment 2</p>
+</div>
+
   </body>
 </html>

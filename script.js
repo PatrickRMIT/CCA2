@@ -57,7 +57,6 @@ function trends(selectedValue) {
       });
   }
 
-  // CLICK EVENT
   $('main').on('click', 'article', function () {
       var id = $(this).attr('data-key');
       mainVid(id);

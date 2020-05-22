@@ -194,5 +194,10 @@ $user = $datastore->lookup($key);
             <div><input type="submit" name="login"value="Login"></div>
         </form>
         </div>
+
+        <div class="footer">
+  <p>Developed By Patrick Jones S3661943 & Joel Jacob 3660851 for Cloud Computing COSC2626/2640 Assignment 2</p>
+</div>
+
     </body>
 </html> 

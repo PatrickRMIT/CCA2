@@ -43,5 +43,8 @@ $user = $datastore->lookup($key);
     <input type="submit" class="button" value="Chane Password" />
 </form>
 </div>
+<div class="footer">
+  <p>Developed By Patrick Jones S3661943 & Joel Jacob 3660851 for Cloud Computing COSC2626/2640 Assignment 2</p>
+</div>
     </body>
 </html>

@@ -95,4 +95,9 @@ function func()
         </form>
         <button type="button" class="button"href="https://cca2patrickjoel.ts.r.appspot.com/main">Return to Main</button>
     </body>
+
+    <div class="footer">
+  <p>Developed By Patrick Jones S3661943 & Joel Jacob 3660851 for Cloud Computing COSC2626/2640 Assignment 2</p>
+</div>
+
 </html>

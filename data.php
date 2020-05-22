@@ -15,7 +15,7 @@ $user = $datastore->lookup($key);
 <!DOCTYPE html>
 <html>
   <head>
-    <title>test</title>
+    <title>Growth Data</title>
 	  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
@@ -38,7 +38,9 @@ $user = $datastore->lookup($key);
 <h4>Year 2020</h4>
 <button id="auth_button" onclick="auth();">Authorize to use BigQuery</button>
 <button id="query_button" style="display:none;" onclick="runQuery();">Run Query</button>
+<div class="chart_box">
 <div id="map" align='center' class="mainvideo"></div>
+</div>
 <h5>The mid-year population is computed by letting the population increase at an annual geometric rate of 2 per cent for half a year. - United Nations, Statistical Commission<h5>
 <h5>Using BigQuery public dataset : Census_Bureau_International - midyear_population<h5>
 </div>
@@ -50,5 +52,10 @@ $user = $datastore->lookup($key);
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script src="bigq" type="text/javascript"></script>
+
+<div class="footer">
+  <p>Developed By Patrick Jones S3661943 & Joel Jacob 3660851 for Cloud Computing COSC2626/2640 Assignment 2</p>
+</div>
+
   </body>
 </html>

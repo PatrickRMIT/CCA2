@@ -15,7 +15,7 @@ $user = $datastore->lookup($key);
 <!DOCTYPE html>
 <html>
   <head>
-    <title>test</title>
+    <title>Search Videos</title>
 	  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
@@ -27,7 +27,7 @@ $user = $datastore->lookup($key);
 </div>
 <ul>
 <li><a href="https://cca2patrickjoel.ts.r.appspot.com/main">Home</a></li>
-<li><a href="https://cca2patrickjoel.ts.r.appspot.com/data">News</a></li>
+<li><a href="https://cca2patrickjoel.ts.r.appspot.com/data">Growth Data</a></li>
   <li><a href="https://cca2patrickjoel.ts.r.appspot.com/files">Files</a></li>
   <li><a class="active" href="https://cca2patrickjoel.ts.r.appspot.com/search">Search Videos</a></li>
   <li><a href="https://cca2patrickjoel.ts.r.appspot.com/maps">Maps</a></li>
@@ -63,4 +63,7 @@ $user = $datastore->lookup($key);
         <script src="script" type="text/javascript"></script>
 
   </body>
+  <div class="footer">
+  <p>Developed By Patrick Jones S3661943 & Joel Jacob 3660851 for Cloud Computing COSC2626/2640 Assignment 2</p>
+</div>
 </html>
