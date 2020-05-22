@@ -27,7 +27,7 @@ $user = $datastore->lookup($key);
 		   	border: 1px solid blue;
       }
       /* Optional: Makes the sample page fill the window. */
-      .container {
+      .container1 {
 			height: 450px;
 		}
     </style>
@@ -43,11 +43,11 @@ $user = $datastore->lookup($key);
 <li><a href="https://cca2patrickjoel.ts.r.appspot.com/main">Home</a></li>
 <li><a href="https://cca2patrickjoel.ts.r.appspot.com/data">Growth Data</a></li>
   <li><a href="https://cca2patrickjoel.ts.r.appspot.com/files">Files</a></li>
-  <li><a href="https://cca2patrickjoel.ts.r.appspot.com/search">Search Videos</a></li>
+  <li><a href="https://cca2patrickjoel.ts.r.appspot.com/search">Trending videos</a></li>
   <li><a class="active" href="https://cca2patrickjoel.ts.r.appspot.com/maps">Maps</a></li>
   <li><a href="https://cca2patrickjoel.ts.r.appspot.com/profile">Profile</a></li>
 </ul>
-<div class="container">
+<div class="container1">
     <div id="map"></div>
     </div>
     <script>
@@ -90,5 +90,10 @@ $user = $datastore->lookup($key);
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0nu7HabL4z8Pzb_S3LRnv0m8GHQaUU5Q&callback=initMap"
     async defer></script>
+
+    <div class="footer">
+  <p>Developed By Patrick Jones S3661943 & Joel Jacob 3660851 for Cloud Computing COSC2626/2640 Assignment 2</p>
+</div>
+
   </body>
 </html>
