@@ -85,7 +85,7 @@ function func()
   <li><a href="#about">About</a></li>
   <li><a class="active" href="https://cca2patrickjoel.ts.r.appspot.com/profile">Profile</a></li>
 </ul>
-
+<div class="mainvideo">
 <p>Logged in as <?php echo $user['name']; ?></p><br> 
         <p>please enter your old password, then your new password</p>
         <form action = "https://cca2patrickjoel.ts.r.appspot.com/password" method="post">
@@ -95,7 +95,7 @@ function func()
         </form>
         <button type="button" class="button"href="https://cca2patrickjoel.ts.r.appspot.com/main">Return to Main</button>
     </body>
-
+</div>
     <div class="footer">
   <p>Developed By Patrick Jones S3661943 & Joel Jacob 3660851 for Cloud Computing COSC2626/2640 Assignment 2</p>
 </div>

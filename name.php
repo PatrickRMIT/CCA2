@@ -29,8 +29,9 @@ function func()
 
     $newname = $_POST['newname'];
 
-    echo $_POST['newname'];
-    echo $newname;
+   // echo $_POST['newname'];
+   // echo $newname;
+    echo "Changing Username....";
 
     if($newname == null){
         $exist = 1;
@@ -79,6 +80,7 @@ function func()
   <li><a href="#about">About</a></li>
   <li><a class="active" href="https://cca2patrickjoel.ts.r.appspot.com/profile">Profile</a></li>
 </ul>
+<div class="mainvideo">
 <p>Logged in as <?php echo $user['name']; ?></p><br> 
     <p>Change your name here:</p>
         <form action = "https://cca2patrickjoel.ts.r.appspot.com/name" method="post">
@@ -86,7 +88,7 @@ function func()
             <div><input type="submit" name="change" class="button" value="CHANGE"></div>
         </form>
         <button type="button" class="button" href="https://cca2patrickjoel.ts.r.appspot.com/main">Return to Main</button>
-        
+    </div> 
         <div class="footer">
   <p>Developed By Patrick Jones S3661943 & Joel Jacob 3660851 for Cloud Computing COSC2626/2640 Assignment 2</p>
 </div>

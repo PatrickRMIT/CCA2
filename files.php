@@ -140,7 +140,6 @@ $user = $datastore->lookup($key);
 
 // GMAIL
 
-
       function listLabels() {
         gapi.client.gmail.users.labels.list({
           'userId': 'me'
