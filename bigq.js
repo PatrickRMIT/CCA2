@@ -74,11 +74,11 @@ function runQuery() {
   });
   request.execute(function(response) {     
       console.log(response);
-      var stateValues = [["State", "Age"]];
+      var stateValues = [["State", "Pop"]];
       $.each(response.result.rows, function(i, item) {
         var state = item.f[0].v;
-        var age = parseFloat(item.f[1].v);
-        var stateValue = [state, age];
+        var pop = parseFloat(item.f[1].v);
+        var stateValue = [state, pop];
         stateValues.push(stateValue);
       });  
       var data = google.visualization.arrayToDataTable(stateValues);
