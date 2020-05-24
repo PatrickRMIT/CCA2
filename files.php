@@ -30,7 +30,7 @@ $user = $datastore->lookup($key);
 <li><a href="https://cca2patrickjoel.ts.r.appspot.com/main">Home</a></li>
 <li><a href="https://cca2patrickjoel.ts.r.appspot.com/data">Growth Data</a></li>
   <li><a class="active" href="https://cca2patrickjoel.ts.r.appspot.com/files">Files</a></li>
-  <li><a href="https://cca2patrickjoel.ts.r.appspot.com/search">Search Videos</a></li>
+  <li><a href="https://cca2patrickjoel.ts.r.appspot.com/search">Trending Videos</a></li>
   <li><a href="https://cca2patrickjoel.ts.r.appspot.com/maps">Maps</a></li>
   <li><a href="https://cca2patrickjoel.ts.r.appspot.com/profile">Profile</a></li>
 </ul>
